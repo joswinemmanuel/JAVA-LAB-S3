@@ -1,4 +1,4 @@
-public class Day1_Arithmetic {
+public class Day1_1_Arithmetic {
 
 	public static void main(String[] args) {
 		int a=20, b=10;
