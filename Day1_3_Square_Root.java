@@ -1,6 +1,6 @@
 import java.lang.Math;
 
-public class Day1_Square_Root {
+public class Day1_3_Square_Root {
     public static void main(String[] args) {
         int number = 100;
         double result = Math.sqrt(number);
