@@ -1,5 +1,4 @@
-
-public class Arithmetic {
+public class Day1_Arithmetic {
 
 	public static void main(String[] args) {
 		int a=20, b=10;
@@ -11,3 +10,10 @@ public class Arithmetic {
 	}
 
 }
+
+/*
+20 + 10 = 30
+20 - 10 = 10
+20 * 10 = 200
+20 / 10 = 2
+*/
