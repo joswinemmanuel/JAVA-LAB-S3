@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Day2_10_Read_display_array {
+public class Day2_11_Bubble_sort {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int arr[], n;
