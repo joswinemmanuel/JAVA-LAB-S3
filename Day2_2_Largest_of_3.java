@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Day2_1_Largest_of_2 {
+public class Day2_2_Largest_of_3 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int num1, num2, num3;
