@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Day4_First_last_index {
+public class Day4_2_Frequency_of_character {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str;
