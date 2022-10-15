@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Day4_3String_palindrome_without {
+public class Day4_3_String_palindrome_without {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str1;
