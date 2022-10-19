@@ -11,7 +11,7 @@ class Room {
     }
 }
 
-class BedRoom extends Room{
+class BedRoom extends Room {
     int height;
 
     BedRoom(int length, int width, int height) {
