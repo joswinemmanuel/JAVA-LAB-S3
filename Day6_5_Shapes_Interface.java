@@ -38,4 +38,4 @@ class Square extends Shapes implements Area {
 /*
 Area of Rectangle : 200
 Area of Square : 100
-*/
+*/  
