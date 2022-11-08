@@ -10,7 +10,7 @@ public class Day1_1_Arithmetic {
 	}
 
 }
-
+ 
 /*
 20 + 10 = 30
 20 - 10 = 10
