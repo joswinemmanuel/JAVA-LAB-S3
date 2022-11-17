@@ -11,23 +11,56 @@ public class Day8_Error_handling {
 			option = input.nextInt();
 			
 			switch(option) {
+			
 			case 1:
-				System.out.println("This is ArithmeticException");
 				try {
-					System.out.println(10/0);
+					int a, b;
+					System.out.println("Program to perform division");
+					System.out.print("Enter number 1 : ");
+					a = input.nextInt();
+					System.out.print("Enter number 2 : ");
+					b = input.nextInt();
+					if(b==0)
+					{
+						throw new ArithmeticException("Division by Zero");
+					}
+					else
+					{
+						System.out.println("Result="+a/b);
+					}
 				} catch(Exception e) {
 					System.out.println(e);
+				} finally {
+					System.out.print("finally block content\n");
 				}
 				break;
+				
 			case 2:
-				System.out.println("This is ArrayIndexOutOfBoundsException");
 				try {
-					int[] arr = new int[5];
-					arr[6] = 10;
+					int n, pos;
+					System.out.print("Enter number of elements to store in array : ");
+					n = input.nextInt();
+					
+					int[] arr = new int[n];
+					System.out.print("Enter the elements : ");
+					for(int i=0; i<n; i++) {
+						arr[i] = input.nextInt();
+					}
+					
+					System.out.print("Enter the postion to be accessed : ");
+					pos = input.nextInt();
+					if(pos >= n)
+						throw new ArrayIndexOutOfBoundsException("Array Index Out Of Bounds");
+					else
+						System.out.println("Element is : " + arr[pos]);
+					
 				} catch(Exception e) {
 					System.out.println(e);
+				} finally {
+					System.out.print("finally block content\n");
 				}
 				break;
+				
 			case 3:
 				System.out.println("Exiting");
 				break;
@@ -44,13 +77,33 @@ MENU
 2) Array Index Out Of Bounds Exception
 3) Exit
 
-Enter the option : 1
-This is ArithmeticException
-java.lang.ArithmeticException: / by zero
+Enter the option : 2
+Enter number of elements to store in array : 3
+Enter the elements : 10 20 30
+Enter the postion to be accessed : 2
+Element is : 30
+finally block content
 
 Enter the option : 2
-This is ArrayIndexOutOfBoundsException
-java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 5
+Enter number of elements to store in array : 4
+Enter the elements : 1 2 3 4
+Enter the postion to be accessed : 10
+java.lang.ArrayIndexOutOfBoundsException: Array Index Out Of Bounds
+finally block content
+
+Enter the option : 1
+Program to perform division
+Enter number 1 : 10
+Enter number 2 : 2
+Result=5
+finally block content
+
+Enter the option : 1
+Program to perform division
+Enter number 1 : 10
+Enter number 2 : 0
+java.lang.ArithmeticException: Division by Zero
+finally block content
 
 Enter the option : 3
 Exiting
