@@ -150,17 +150,17 @@ public class GUI_Calculator implements ActionListener {
 			t1.setText(Integer.toString(res));
 			break;
 		case 2:
-			res=t-Integer.parseInt(t1.getText());
+			res = t - Integer.parseInt(t1.getText());
 			t1.setText("");
 			t1.setText(Integer.toString(res));
 			break;
 		case 3:
-			res=t*Integer.parseInt(t1.getText());
+			res = t * Integer.parseInt(t1.getText());
 			t1.setText("");
 			t1.setText(Integer.toString(res));
 			break;
 		case 4:
-			res=t/Integer.parseInt(t1.getText());
+			res = t / Integer.parseInt(t1.getText());
 			t1.setText("");
 			t1.setText(Integer.toString(res));
 			break;
