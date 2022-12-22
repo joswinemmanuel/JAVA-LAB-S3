@@ -37,13 +37,13 @@ public class GUI_Calculator implements ActionListener {
 		b11.setBounds(200, 200, 50, 30);
 		b12 = new JButton("*");
 		b12.setBounds(250, 200, 50, 30);
-		b13 = new JButton("/");
+		b13 = new JButton("0");
 		b13.setBounds(100, 230, 50, 30);
-		b14 = new JButton("0");
-		b14.setBounds(150, 230, 50, 30);
+		b14 = new JButton("Clr");
+		b14.setBounds(150, 230, 53, 30);
 		b15 = new JButton("=");
 		b15.setBounds(200, 230, 50, 30);
-		b16 = new JButton("C");
+		b16 = new JButton("/");
 		b16.setBounds(250, 230, 50, 30);
 		
 		b1.addActionListener(this);
@@ -107,7 +107,7 @@ public class GUI_Calculator implements ActionListener {
 	         t1.setText(t1.getText() + "8");
 	     else if(e.getSource() == b11)
 	         t1.setText(t1.getText() + "9");
-	     else if(e.getSource() == b14)
+	     else if(e.getSource() == b13)
 	         t1.setText(t1.getText() + "0");
 	     else if(e.getSource() == b4) {
 	    	 String s = t1.getText();
@@ -127,7 +127,7 @@ public class GUI_Calculator implements ActionListener {
 	         t1.setText("");
 	         i=3;
 	     }
-	     else if(e.getSource()==b13) {
+	     else if(e.getSource()== b16) {
 	         String s=t1.getText();
 	         n=Integer.parseInt(s);
 	         t1.setText("");
